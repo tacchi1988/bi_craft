@@ -16,9 +16,7 @@
         </named-connections>
         <relation connection='textscan.11oor8d0ilderq1gvx1wu1osl9y7' name='list.csv' table='[list#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='ja_JP' separator=','>
-            <column datatype='string' name='name' ordinal='0' />
-            <column datatype='integer' name='age' ordinal='1' />
-            <column datatype='string' name='sex' ordinal='2' />
+            <column datatype='string' name='name_age_sex' ordinal='0' />
           </columns>
         </relation>
         <metadata-records>
@@ -43,37 +41,12 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>name</remote-name>
+            <remote-name>name_age_sex</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[name]</local-name>
+            <local-name>[name_age_sex]</local-name>
             <parent-name>[list.csv]</parent-name>
-            <remote-alias>name</remote-alias>
+            <remote-alias>name_age_sex</remote-alias>
             <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>age</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[age]</local-name>
-            <parent-name>[list.csv]</parent-name>
-            <remote-alias>age</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>sex</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[sex]</local-name>
-            <parent-name>[list.csv]</parent-name>
-            <remote-alias>sex</remote-alias>
-            <ordinal>2</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <scale>1</scale>
@@ -86,7 +59,7 @@
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
-      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.522' measure-ordering='alphabetic' measure-percentage='0.478' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;Japan&quot;' />
       </semantic-values>

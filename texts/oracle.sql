@@ -1,2 +1,3 @@
 SELECT *
-FROM DUAL;
+FROM DUAL
+order by one;
